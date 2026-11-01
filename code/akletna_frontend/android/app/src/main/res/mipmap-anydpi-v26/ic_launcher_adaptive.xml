@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Integration structure only: foreground is the existing unapproved template. -->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/akletna_icon_background" />
+    <foreground android:drawable="@mipmap/ic_launcher" />
+</adaptive-icon>

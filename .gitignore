@@ -1,0 +1,101 @@
+# Local secrets and generated output anywhere in the project.
+.env
+.env.*
+!.env.example
+**/application-local.properties
+**/application-local.yml
+**/application-local.yaml
+**/*context.txt
+**/.idea/
+**/.vscode/
+**/target/
+**/build/
+**/coverage/
+*.log
+*.tmp
+*.bak
+*.zip
+*.apk
+*.aab
+*.jks
+*.keystore
+*.p12
+*.pfx
+**/key.properties
+
+# Personal milestone screenshots are not source-code backup content.
+/akletna milestone photos/
+
+# Local acceptance captures and private autonomous runtime state.
+/docs/test-output/
+/.experiment-private/
+
+# Python helper caches.
+__pycache__/
+*.py[cod]
+
+# Optional provider credential worksheet; never commit filled values.
+/code/backend/backend/config/provider-sandbox.env
+
+# Isolated demo credentials, backups, and runtime logs.
+/.demo-private/
+
+# Local-only agent instructions; never public.
+/AGENTS.md
+/code/AGENTS.md
+/.ai/
+
+# Local release audit and removed experimental sources.
+/.release-private/
+**/AGENTS.md
+**/CLAUDE.md
+**/PROJECT_STATUS.md
+**/.ai/
+**/.claude/
+**/.codex/
+**/.agents/
+**/local.properties
+**/.gradle/
+**/.dart_tool/
+**/.cxx/
+**/ephemeral/
+**/Pods/
+**/.symlinks/
+**/backups/
+*.dump
+*.backup
+*.old
+*.orig
+*.pem
+*.key
+*.db
+*.sqlite*
+
+**/application-*.local.*
+**/application-private.*
+**/node_modules/
+**/dist/
+**/out/
+*.sql.gz
+*.hprof
+**/Generated.xcconfig
+**/flutter_export_environment.sh
+
+# Local notes and backup directories anywhere in the checkout.
+**/.demo-private/
+**/.experiment-private/
+**/.release-private/
+**/*context.txt
+**/*backup*/
+**/*Backup*/
+**/private-notes/
+*.7z
+*.tar
+*.tgz
+*.gz
+*.jks
+*.keystore
+
+# Local demo recordings.
+/outputs/
+*.mp4

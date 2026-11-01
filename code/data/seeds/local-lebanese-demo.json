@@ -1,0 +1,992 @@
+{
+    "seedKey":  "akletna-local-lebanese-demo-v1",
+    "scope":  "LOCAL_DEVELOPMENT_ONLY",
+    "rights":  "ORIGINAL_AKLETNA_DEMO_TEXT",
+    "nutrition":  "UNREVIEWED_UNMAPPED",
+    "images":  null,
+    "ingredients":  [
+                        {
+                            "id":  800000001,
+                            "key":  "chickpeas-cooked",
+                            "name":  "Chickpeas, cooked and drained",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000002,
+                            "key":  "tahini",
+                            "name":  "Tahini, plain toasted hulled sesame",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000003,
+                            "key":  "lemon-juice",
+                            "name":  "Lemon juice, freshly squeezed",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000004,
+                            "key":  "garlic",
+                            "name":  "Garlic, raw peeled cloves",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000005,
+                            "key":  "olive-oil",
+                            "name":  "Olive oil, plain",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000006,
+                            "key":  "salt",
+                            "name":  "Table salt",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000007,
+                            "key":  "water",
+                            "name":  "Drinking water",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000008,
+                            "key":  "cumin",
+                            "name":  "Cumin, ground",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000009,
+                            "key":  "parsley",
+                            "name":  "Parsley, fresh leaves and tender stems",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000010,
+                            "key":  "tomato",
+                            "name":  "Tomato, raw trimmed",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000011,
+                            "key":  "bulgur-fine",
+                            "name":  "Bulgur, fine dry",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000012,
+                            "key":  "onion",
+                            "name":  "Yellow onion, raw peeled",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000013,
+                            "key":  "mint",
+                            "name":  "Mint, fresh leaves",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000014,
+                            "key":  "cucumber",
+                            "name":  "Cucumber, raw trimmed",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000015,
+                            "key":  "romaine",
+                            "name":  "Romaine lettuce, raw trimmed",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000016,
+                            "key":  "radish",
+                            "name":  "Radish, raw trimmed",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000017,
+                            "key":  "sumac",
+                            "name":  "Sumac, ground unsalted",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000018,
+                            "key":  "pomegranate-molasses",
+                            "name":  "Pomegranate molasses, pure unsweetened",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000019,
+                            "key":  "pita",
+                            "name":  "White wheat pita bread, baked",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000020,
+                            "key":  "rice",
+                            "name":  "Long-grain white rice, dry",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000021,
+                            "key":  "brown-lentils",
+                            "name":  "Brown lentils, dry",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000022,
+                            "key":  "red-lentils",
+                            "name":  "Red split lentils, dry",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000023,
+                            "key":  "carrot",
+                            "name":  "Carrot, raw peeled",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000024,
+                            "key":  "potato",
+                            "name":  "Potato, raw peeled",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000025,
+                            "key":  "coriander",
+                            "name":  "Coriander, fresh leaves and tender stems",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000026,
+                            "key":  "chili",
+                            "name":  "Red chili flakes, dried",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000027,
+                            "key":  "green-beans",
+                            "name":  "Green beans, raw trimmed",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000028,
+                            "key":  "vermicelli",
+                            "name":  "Wheat vermicelli, dry",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000029,
+                            "key":  "beef",
+                            "name":  "Beef mince, raw approximately 15 percent fat",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000030,
+                            "key":  "allspice",
+                            "name":  "Allspice, ground",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000031,
+                            "key":  "cinnamon",
+                            "name":  "Cinnamon, ground",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000032,
+                            "key":  "chicken",
+                            "name":  "Chicken breast, raw skinless boneless",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000033,
+                            "key":  "yogurt",
+                            "name":  "Yogurt, plain whole milk",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000034,
+                            "key":  "black-pepper",
+                            "name":  "Black pepper, ground",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000035,
+                            "key":  "paprika",
+                            "name":  "Paprika, sweet ground",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000036,
+                            "key":  "eggplant-roasted",
+                            "name":  "Eggplant flesh, roasted peeled and drained",
+                            "unit":  "g"
+                        },
+                        {
+                            "id":  800000037,
+                            "key":  "labneh",
+                            "name":  "Labneh, plain whole milk strained yogurt",
+                            "unit":  "g"
+                        }
+                    ],
+    "recipes":  [
+                    {
+                        "id":  810000001,
+                        "key":  "hummus",
+                        "name":  "Hummus bi Tahini",
+                        "category":  "Mezze",
+                        "servings":  6,
+                        "cookingTime":  15,
+                        "description":  "Cooked chickpeas blended with tahini, lemon and garlic. Original local demo preparation.",
+                        "instructions":  "1. Blend the cooked, drained chickpeas with tahini, lemon juice, peeled garlic, salt and cumin.\n\n2. Add the measured water gradually and blend until smooth. Scrape down the bowl as needed.\n\n3. Spoon into a shallow bowl and finish with the olive oil. Chill leftovers promptly.\n\nOriginal Akletna local demo instructions. Ingredient-state and nutrition mappings have not been reviewed. No image supplied.",
+                        "ingredients":  [
+                                            {
+                                                "id":  820000101,
+                                                "ingredientId":  800000001,
+                                                "quantity":  "500",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000102,
+                                                "ingredientId":  800000002,
+                                                "quantity":  "90",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000103,
+                                                "ingredientId":  800000003,
+                                                "quantity":  "70",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000104,
+                                                "ingredientId":  800000004,
+                                                "quantity":  "8",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000105,
+                                                "ingredientId":  800000005,
+                                                "quantity":  "30",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000106,
+                                                "ingredientId":  800000006,
+                                                "quantity":  "5",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000107,
+                                                "ingredientId":  800000007,
+                                                "quantity":  "100",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000108,
+                                                "ingredientId":  800000008,
+                                                "quantity":  "1",
+                                                "unit":  "g"
+                                            }
+                                        ]
+                    },
+                    {
+                        "id":  810000002,
+                        "key":  "tabbouleh",
+                        "name":  "Tabbouleh",
+                        "category":  "Salad",
+                        "servings":  6,
+                        "cookingTime":  25,
+                        "description":  "A parsley-forward salad with fine dry bulgur, tomato, fresh mint and lemon.",
+                        "instructions":  "1. Mix the fine dry bulgur with the lemon juice and leave for 15 minutes to soften.\n\n2. Wash and thoroughly dry the parsley and mint, then chop finely. Dice the tomatoes and onion.\n\n3. Toss everything with the olive oil and salt. Rest briefly before serving; retain the tomato juices in the salad.\n\nOriginal Akletna local demo instructions. Ingredient-state and nutrition mappings have not been reviewed. No image supplied.",
+                        "ingredients":  [
+                                            {
+                                                "id":  820000201,
+                                                "ingredientId":  800000009,
+                                                "quantity":  "180",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000202,
+                                                "ingredientId":  800000010,
+                                                "quantity":  "350",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000203,
+                                                "ingredientId":  800000011,
+                                                "quantity":  "60",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000204,
+                                                "ingredientId":  800000012,
+                                                "quantity":  "80",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000205,
+                                                "ingredientId":  800000013,
+                                                "quantity":  "20",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000206,
+                                                "ingredientId":  800000003,
+                                                "quantity":  "100",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000207,
+                                                "ingredientId":  800000005,
+                                                "quantity":  "60",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000208,
+                                                "ingredientId":  800000006,
+                                                "quantity":  "5",
+                                                "unit":  "g"
+                                            }
+                                        ]
+                    },
+                    {
+                        "id":  810000003,
+                        "key":  "fattoush",
+                        "name":  "Fattoush",
+                        "category":  "Salad",
+                        "servings":  4,
+                        "cookingTime":  20,
+                        "description":  "Crunchy vegetables, toasted pita, sumac and a lemon-pomegranate dressing.",
+                        "instructions":  "1. Cut the baked pita into pieces and toast in a dry oven until crisp. Allow it to cool.\n\n2. Chop the washed lettuce, cucumber, tomatoes, radishes, onion and mint.\n\n3. Whisk the olive oil, lemon juice, pomegranate molasses, sumac and salt. Dress the vegetables and fold in the pita just before serving.\n\nOriginal Akletna local demo instructions. Ingredient-state and nutrition mappings have not been reviewed. No image supplied.",
+                        "ingredients":  [
+                                            {
+                                                "id":  820000301,
+                                                "ingredientId":  800000015,
+                                                "quantity":  "200",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000302,
+                                                "ingredientId":  800000014,
+                                                "quantity":  "250",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000303,
+                                                "ingredientId":  800000010,
+                                                "quantity":  "300",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000304,
+                                                "ingredientId":  800000016,
+                                                "quantity":  "80",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000305,
+                                                "ingredientId":  800000012,
+                                                "quantity":  "40",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000306,
+                                                "ingredientId":  800000013,
+                                                "quantity":  "15",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000307,
+                                                "ingredientId":  800000019,
+                                                "quantity":  "100",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000308,
+                                                "ingredientId":  800000005,
+                                                "quantity":  "50",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000309,
+                                                "ingredientId":  800000003,
+                                                "quantity":  "70",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000310,
+                                                "ingredientId":  800000018,
+                                                "quantity":  "20",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000311,
+                                                "ingredientId":  800000017,
+                                                "quantity":  "6",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000312,
+                                                "ingredientId":  800000006,
+                                                "quantity":  "5",
+                                                "unit":  "g"
+                                            }
+                                        ]
+                    },
+                    {
+                        "id":  810000004,
+                        "key":  "mujaddara",
+                        "name":  "Mujaddara with Rice",
+                        "category":  "Main Dish",
+                        "servings":  6,
+                        "cookingTime":  55,
+                        "description":  "Brown lentils and long-grain rice finished with deeply browned onions.",
+                        "instructions":  "1. Rinse the dry lentils and rice separately. Simmer the lentils in 700 g of the water until almost tender, about 15 to 20 minutes; retain the cooking liquid.\n\n2. Thinly slice the onions. Cook them slowly in the olive oil, stirring often, until deeply golden without burning.\n\n3. Add the rice, remaining 500 g water, salt, cumin, pepper and half the onions to the lentils. Cover and simmer gently until the rice and lentils are tender and the water is absorbed.\n\n4. Rest covered for 10 minutes, fluff gently and top with the remaining onions.\n\nOriginal Akletna local demo instructions. Ingredient-state and nutrition mappings have not been reviewed. No image supplied.",
+                        "ingredients":  [
+                                            {
+                                                "id":  820000401,
+                                                "ingredientId":  800000021,
+                                                "quantity":  "250",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000402,
+                                                "ingredientId":  800000020,
+                                                "quantity":  "200",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000403,
+                                                "ingredientId":  800000012,
+                                                "quantity":  "400",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000404,
+                                                "ingredientId":  800000005,
+                                                "quantity":  "60",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000405,
+                                                "ingredientId":  800000007,
+                                                "quantity":  "1200",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000406,
+                                                "ingredientId":  800000006,
+                                                "quantity":  "7",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000407,
+                                                "ingredientId":  800000008,
+                                                "quantity":  "2",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000408,
+                                                "ingredientId":  800000034,
+                                                "quantity":  "1",
+                                                "unit":  "g"
+                                            }
+                                        ]
+                    },
+                    {
+                        "id":  810000005,
+                        "key":  "lentil-soup",
+                        "name":  "Shorbet Adas",
+                        "category":  "Soup",
+                        "servings":  6,
+                        "cookingTime":  40,
+                        "description":  "A smooth red lentil soup with carrots, cumin and lemon.",
+                        "instructions":  "1. Rinse the dry red lentils. Dice the peeled onion and carrot.\n\n2. Soften the onion and carrot in the olive oil, then stir in the cumin.\n\n3. Add lentils, water and salt. Simmer until the lentils collapse and the carrots are tender, about 25 minutes.\n\n4. Blend carefully to the texture you prefer. Stir in the lemon juice and serve warm.\n\nOriginal Akletna local demo instructions. Ingredient-state and nutrition mappings have not been reviewed. No image supplied.",
+                        "ingredients":  [
+                                            {
+                                                "id":  820000501,
+                                                "ingredientId":  800000022,
+                                                "quantity":  "250",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000502,
+                                                "ingredientId":  800000012,
+                                                "quantity":  "120",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000503,
+                                                "ingredientId":  800000023,
+                                                "quantity":  "150",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000504,
+                                                "ingredientId":  800000005,
+                                                "quantity":  "25",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000505,
+                                                "ingredientId":  800000007,
+                                                "quantity":  "1400",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000506,
+                                                "ingredientId":  800000008,
+                                                "quantity":  "3",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000507,
+                                                "ingredientId":  800000006,
+                                                "quantity":  "6",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000508,
+                                                "ingredientId":  800000003,
+                                                "quantity":  "50",
+                                                "unit":  "g"
+                                            }
+                                        ]
+                    },
+                    {
+                        "id":  810000006,
+                        "key":  "batata-harra",
+                        "name":  "Batata Harra",
+                        "category":  "Side Dish",
+                        "servings":  4,
+                        "cookingTime":  45,
+                        "description":  "Roasted potatoes tossed with garlic, coriander, chili and lemon.",
+                        "instructions":  "1. Cut the weighed peeled potatoes into even cubes. Toss with 35 g of the oil and the salt.\n\n2. Roast on a tray at 210 C, turning once, until golden and tender, about 30 to 35 minutes.\n\n3. Warm the remaining 10 g oil in a wide pan. Briefly cook the chopped garlic and chili, then add the chopped coriander.\n\n4. Toss in the cooked potatoes and lemon juice. Serve immediately.\n\nOriginal Akletna local demo instructions. Ingredient-state and nutrition mappings have not been reviewed. No image supplied.",
+                        "ingredients":  [
+                                            {
+                                                "id":  820000601,
+                                                "ingredientId":  800000024,
+                                                "quantity":  "800",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000602,
+                                                "ingredientId":  800000005,
+                                                "quantity":  "45",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000603,
+                                                "ingredientId":  800000004,
+                                                "quantity":  "18",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000604,
+                                                "ingredientId":  800000025,
+                                                "quantity":  "30",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000605,
+                                                "ingredientId":  800000026,
+                                                "quantity":  "2",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000606,
+                                                "ingredientId":  800000003,
+                                                "quantity":  "40",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000607,
+                                                "ingredientId":  800000006,
+                                                "quantity":  "6",
+                                                "unit":  "g"
+                                            }
+                                        ]
+                    },
+                    {
+                        "id":  810000007,
+                        "key":  "loubieh-bi-zeit",
+                        "name":  "Loubieh bi Zeit",
+                        "category":  "Yakhnet",
+                        "servings":  4,
+                        "cookingTime":  50,
+                        "description":  "Tender green beans braised with fresh tomatoes, onions, garlic and olive oil.",
+                        "instructions":  "1. Cut the trimmed green beans into short lengths. Slice the onion and chop the garlic and tomatoes.\n\n2. Soften the onion in the olive oil. Add the garlic, then the beans, and stir for several minutes.\n\n3. Add tomatoes, measured water and salt. Cover and simmer gently until the beans are tender, about 30 to 35 minutes.\n\n4. Uncover briefly if the sauce needs thickening. Serve warm or at room temperature.\n\nOriginal Akletna local demo instructions. Ingredient-state and nutrition mappings have not been reviewed. No image supplied.",
+                        "ingredients":  [
+                                            {
+                                                "id":  820000701,
+                                                "ingredientId":  800000027,
+                                                "quantity":  "800",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000702,
+                                                "ingredientId":  800000012,
+                                                "quantity":  "160",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000703,
+                                                "ingredientId":  800000004,
+                                                "quantity":  "20",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000704,
+                                                "ingredientId":  800000010,
+                                                "quantity":  "500",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000705,
+                                                "ingredientId":  800000005,
+                                                "quantity":  "50",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000706,
+                                                "ingredientId":  800000007,
+                                                "quantity":  "150",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000707,
+                                                "ingredientId":  800000006,
+                                                "quantity":  "6",
+                                                "unit":  "g"
+                                            }
+                                        ]
+                    },
+                    {
+                        "id":  810000008,
+                        "key":  "rice-vermicelli",
+                        "name":  "Lebanese Rice with Vermicelli",
+                        "category":  "Side Dish",
+                        "servings":  6,
+                        "cookingTime":  30,
+                        "description":  "Dry long-grain white rice cooked with golden wheat vermicelli.",
+                        "instructions":  "1. Rinse the dry rice and drain well. Break the dry vermicelli into short pieces.\n\n2. Heat the olive oil in a saucepan and stir the vermicelli until evenly golden.\n\n3. Stir in the rice, measured water and salt. Bring to a boil, then cover and cook over low heat until the rice is tender and the liquid absorbed, about 15 to 18 minutes.\n\n4. Remove from the heat and rest covered for 10 minutes before fluffing.\n\nOriginal Akletna local demo instructions. Ingredient-state and nutrition mappings have not been reviewed. No image supplied.",
+                        "ingredients":  [
+                                            {
+                                                "id":  820000801,
+                                                "ingredientId":  800000020,
+                                                "quantity":  "300",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000802,
+                                                "ingredientId":  800000028,
+                                                "quantity":  "60",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000803,
+                                                "ingredientId":  800000005,
+                                                "quantity":  "25",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000804,
+                                                "ingredientId":  800000007,
+                                                "quantity":  "720",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000805,
+                                                "ingredientId":  800000006,
+                                                "quantity":  "5",
+                                                "unit":  "g"
+                                            }
+                                        ]
+                    },
+                    {
+                        "id":  810000009,
+                        "key":  "kafta-bil-sanieh",
+                        "name":  "Kafta bil Sanieh",
+                        "category":  "Main Dish",
+                        "servings":  6,
+                        "cookingTime":  65,
+                        "description":  "Spiced beef kafta baked with sliced potatoes and tomatoes.",
+                        "instructions":  "1. Finely chop the onion and parsley. Mix with the raw beef, allspice, cinnamon, pepper and half the salt.\n\n2. Form small flattened kafta patties. Thinly slice the peeled potatoes and tomatoes.\n\n3. Oil a baking dish with the measured olive oil. Arrange kafta, potatoes and tomatoes in overlapping layers. Add the water and remaining salt.\n\n4. Cover and bake at 200 C until the potatoes are tender and the beef is thoroughly cooked, about 40 to 45 minutes. Uncover near the end to brown the surface.\n\nOriginal Akletna local demo instructions. Ingredient-state and nutrition mappings have not been reviewed. No image supplied.",
+                        "ingredients":  [
+                                            {
+                                                "id":  820000901,
+                                                "ingredientId":  800000029,
+                                                "quantity":  "700",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000902,
+                                                "ingredientId":  800000009,
+                                                "quantity":  "60",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000903,
+                                                "ingredientId":  800000012,
+                                                "quantity":  "150",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000904,
+                                                "ingredientId":  800000024,
+                                                "quantity":  "600",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000905,
+                                                "ingredientId":  800000010,
+                                                "quantity":  "400",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000906,
+                                                "ingredientId":  800000005,
+                                                "quantity":  "30",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000907,
+                                                "ingredientId":  800000007,
+                                                "quantity":  "150",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000908,
+                                                "ingredientId":  800000006,
+                                                "quantity":  "8",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000909,
+                                                "ingredientId":  800000030,
+                                                "quantity":  "3",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000910,
+                                                "ingredientId":  800000031,
+                                                "quantity":  "1",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820000911,
+                                                "ingredientId":  800000034,
+                                                "quantity":  "2",
+                                                "unit":  "g"
+                                            }
+                                        ]
+                    },
+                    {
+                        "id":  810000010,
+                        "key":  "shish-tawook",
+                        "name":  "Shish Tawook",
+                        "category":  "Main Dish",
+                        "servings":  4,
+                        "cookingTime":  35,
+                        "description":  "Chicken breast marinated in plain yogurt, lemon, garlic and paprika. Allow additional chilling time.",
+                        "instructions":  "1. Cut the raw boneless, skinless chicken breast into evenly sized pieces.\n\n2. Mix yogurt, lemon juice, olive oil, crushed garlic, paprika, cumin, salt and pepper. Coat the chicken and marinate covered in the refrigerator for at least 2 hours; this chilling time is additional.\n\n3. Thread onto skewers and grill or broil, turning regularly, until the chicken is thoroughly cooked throughout. Discard any uncooked leftover marinade.\n\n4. Rest briefly and serve hot. Keep raw-chicken utensils separate from serving utensils.\n\nOriginal Akletna local demo instructions. Ingredient-state and nutrition mappings have not been reviewed. No image supplied.",
+                        "ingredients":  [
+                                            {
+                                                "id":  820001001,
+                                                "ingredientId":  800000032,
+                                                "quantity":  "800",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001002,
+                                                "ingredientId":  800000033,
+                                                "quantity":  "100",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001003,
+                                                "ingredientId":  800000003,
+                                                "quantity":  "50",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001004,
+                                                "ingredientId":  800000005,
+                                                "quantity":  "30",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001005,
+                                                "ingredientId":  800000004,
+                                                "quantity":  "15",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001006,
+                                                "ingredientId":  800000035,
+                                                "quantity":  "4",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001007,
+                                                "ingredientId":  800000008,
+                                                "quantity":  "2",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001008,
+                                                "ingredientId":  800000006,
+                                                "quantity":  "6",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001009,
+                                                "ingredientId":  800000034,
+                                                "quantity":  "1",
+                                                "unit":  "g"
+                                            }
+                                        ]
+                    },
+                    {
+                        "id":  810000011,
+                        "key":  "moutabbal",
+                        "name":  "Moutabbal",
+                        "category":  "Mezze",
+                        "servings":  6,
+                        "cookingTime":  15,
+                        "description":  "Roasted, peeled eggplant flesh mashed with tahini, yogurt, lemon and garlic. Start with already-roasted flesh.",
+                        "instructions":  "1. Start with roasted eggplant that has been peeled and drained. Weigh 600 g of the prepared flesh; the quantity does not refer to whole raw eggplants.\n\n2. Mash the flesh with tahini, yogurt, lemon juice, finely crushed garlic and salt.\n\n3. Spoon into a serving dish and finish with olive oil. Refrigerate until serving.\n\nOriginal Akletna local demo instructions. Ingredient-state and nutrition mappings have not been reviewed. No image supplied.",
+                        "ingredients":  [
+                                            {
+                                                "id":  820001101,
+                                                "ingredientId":  800000036,
+                                                "quantity":  "600",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001102,
+                                                "ingredientId":  800000002,
+                                                "quantity":  "70",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001103,
+                                                "ingredientId":  800000003,
+                                                "quantity":  "60",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001104,
+                                                "ingredientId":  800000004,
+                                                "quantity":  "8",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001105,
+                                                "ingredientId":  800000033,
+                                                "quantity":  "100",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001106,
+                                                "ingredientId":  800000006,
+                                                "quantity":  "5",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001107,
+                                                "ingredientId":  800000005,
+                                                "quantity":  "25",
+                                                "unit":  "g"
+                                            }
+                                        ]
+                    },
+                    {
+                        "id":  810000012,
+                        "key":  "balila",
+                        "name":  "Balila",
+                        "category":  "Mezze",
+                        "servings":  4,
+                        "cookingTime":  20,
+                        "description":  "Warm cooked chickpeas dressed with garlic, lemon, olive oil and cumin.",
+                        "instructions":  "1. Warm the cooked, drained chickpeas with the measured water in a saucepan. Simmer gently for about 10 minutes.\n\n2. Crush the garlic with the salt and mix with lemon juice and cumin.\n\n3. Stir the dressing into the warm chickpeas, keeping the remaining cooking liquid. Finish with olive oil and serve warm.\n\nOriginal Akletna local demo instructions. Ingredient-state and nutrition mappings have not been reviewed. No image supplied.",
+                        "ingredients":  [
+                                            {
+                                                "id":  820001201,
+                                                "ingredientId":  800000001,
+                                                "quantity":  "600",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001202,
+                                                "ingredientId":  800000007,
+                                                "quantity":  "200",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001203,
+                                                "ingredientId":  800000004,
+                                                "quantity":  "10",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001204,
+                                                "ingredientId":  800000003,
+                                                "quantity":  "60",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001205,
+                                                "ingredientId":  800000005,
+                                                "quantity":  "30",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001206,
+                                                "ingredientId":  800000008,
+                                                "quantity":  "3",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001207,
+                                                "ingredientId":  800000006,
+                                                "quantity":  "4",
+                                                "unit":  "g"
+                                            }
+                                        ]
+                    },
+                    {
+                        "id":  810000013,
+                        "key":  "labneh",
+                        "name":  "Labneh with Olive Oil",
+                        "category":  "Breakfast",
+                        "servings":  4,
+                        "cookingTime":  5,
+                        "description":  "Ready-strained plain labneh served with olive oil and fresh mint; this is a serving preparation, not a yogurt-straining recipe.",
+                        "instructions":  "1. Spoon the ready-strained plain labneh into a shallow dish and spread it gently.\n\n2. Drizzle with the measured olive oil and scatter over washed, chopped mint leaves.\n\n3. Serve chilled. No additional salt is specified because the salt content of prepared labneh varies.\n\nOriginal Akletna local demo instructions. Ingredient-state and nutrition mappings have not been reviewed. No image supplied.",
+                        "ingredients":  [
+                                            {
+                                                "id":  820001301,
+                                                "ingredientId":  800000037,
+                                                "quantity":  "600",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001302,
+                                                "ingredientId":  800000005,
+                                                "quantity":  "30",
+                                                "unit":  "g"
+                                            },
+                                            {
+                                                "id":  820001303,
+                                                "ingredientId":  800000013,
+                                                "quantity":  "10",
+                                                "unit":  "g"
+                                            }
+                                        ]
+                    }
+                ],
+    "skipped":  {
+                    "kousa_mahshi":  "Legacy zucchini IDs 4/9 are ambiguous; hollowed vegetable quantities need review."
+                }
+}

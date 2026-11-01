@@ -1,0 +1,8 @@
+# Copy to application-local.properties in this directory and replace privately.
+spring.datasource.url=REPLACE_WITH_LOCAL_DEMO_DATABASE_CONNECTION
+spring.datasource.username=REPLACE_WITH_LOCAL_DATABASE_USER
+spring.datasource.password=REPLACE_WITH_LOCAL_DATABASE_PASSWORD
+akletna.jwt.secret=REPLACE_WITH_BASE64_RANDOM_SIGNING_KEY
+server.port=18091
+spring.jpa.hibernate.ddl-auto=validate
+spring.sql.init.mode=never
