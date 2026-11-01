@@ -1,6 +1,4 @@
 import 'dart:async';
-import 'dart:io';
-import 'dart:ui' as ui;
 
 import 'package:akletna_frontend/core/network/api_exception.dart';
 import 'package:akletna_frontend/core/theme/app_theme.dart';
@@ -13,8 +11,6 @@ import 'package:akletna_frontend/screens/recipes/recipe_catalog_screen.dart';
 import 'package:akletna_frontend/screens/recipes/recipe_detail_screen.dart';
 import 'package:akletna_frontend/screens/recipes/recipe_plan_sheet.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'recipe_management_test.dart'
@@ -211,7 +207,6 @@ class PhaseMatches extends DashboardMatches {
   });
 }
 
-const captureKey = ValueKey('stitch-capture');
 Future<void> render(
   WidgetTester tester,
   Widget screen, {
@@ -228,7 +223,7 @@ Future<void> render(
             .copyWith(textScaler: TextScaler.linear(scale)),
         child: child!,
       ),
-      home: RepaintBoundary(key: captureKey, child: screen),
+      home: screen,
       routes: {
         '/login': (_) => const Scaffold(body: Text('Login destination')),
       },
@@ -237,56 +232,7 @@ Future<void> render(
   await tester.pumpAndSettle();
 }
 
-Future<void> capture(WidgetTester tester, String name) async {
-  if (!const bool.fromEnvironment('STITCH_CAPTURE')) return;
-  final boundary = tester.renderObject<RenderRepaintBoundary>(
-    find.byKey(captureKey),
-  );
-  await tester.runAsync(() async {
-    final screenshot = await boundary.toImage(pixelRatio: 1);
-    final data = await screenshot.toByteData(format: ui.ImageByteFormat.png);
-    final directory = Directory('build/stitch-phase3');
-    await directory.create(recursive: true);
-    await File('${directory.path}/$name.png')
-        .writeAsBytes(data!.buffer.asUint8List());
-    screenshot.dispose();
-  });
-}
-
 void main() {
-  setUpAll(() async {
-    if (!const bool.fromEnvironment('STITCH_CAPTURE')) return;
-    const fonts = String.fromEnvironment('STITCH_FONT_DIR');
-    if (fonts.isEmpty) {
-      throw StateError(
-        'Set STITCH_FONT_DIR to the Flutter material_fonts cache for local captures.',
-      );
-    }
-    final roboto = FontLoader('Roboto');
-    for (final weight in ['regular', 'medium', 'bold']) {
-      roboto.addFont(
-        File('$fonts/roboto-$weight.ttf')
-            .readAsBytes()
-            .then((bytes) => ByteData.sublistView(bytes)),
-      );
-    }
-    await roboto.load();
-    final platformFallback = FontLoader('Ahem');
-    for (final weight in ['regular', 'medium', 'bold']) {
-      platformFallback.addFont(
-        File('$fonts/roboto-$weight.ttf')
-            .readAsBytes()
-            .then((bytes) => ByteData.sublistView(bytes)),
-      );
-    }
-    await platformFallback.load();
-    await (FontLoader('MaterialIcons')..addFont(
-          File('$fonts/MaterialIcons-Regular.otf')
-              .readAsBytes()
-              .then((bytes) => ByteData.sublistView(bytes)),
-        ))
-        .load();
-  });
   testWidgets(
     'Home uses meal snapshots, confirmed readiness and stored grocery IDs',
     (tester) async {
@@ -306,7 +252,6 @@ void main() {
       expect(find.text('Captured family lunch'), findsOneWidget);
       expect(find.text('6 servings'), findsOneWidget);
       expect(find.text('1 ready'), findsOneWidget);
-      await capture(tester, 'home');
       final check = find.byKey(const ValueKey('home-grocery-42'));
       await tester.ensureVisible(check);
       await tester.tap(check);
@@ -355,7 +300,6 @@ void main() {
       expect(find.text('Mountain lentils'), findsOneWidget);
       expect(find.text('Lentil soup'), findsNothing);
       expect(find.text('Private family recipe'), findsNothing);
-      await capture(tester, 'discover');
       await tester.tap(find.byTooltip('Unsave recipe'));
       await tester.pumpAndSettle();
       expect(recipes.saved, isEmpty);
@@ -406,7 +350,6 @@ void main() {
       );
       expect(find.text('UNAVAILABLE'), findsOneWidget);
       expect(find.byKey(const ValueKey('nutrition-stats')), findsNothing);
-      await capture(tester, 'detail');
       await tester.ensureVisible(find.text('Ingredients'));
       await tester.tap(find.text('Ingredients'));
       await tester.pumpAndSettle();
@@ -423,7 +366,6 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('Simmer until tender.'), findsOneWidget);
       expect(find.text('3 instruction sections'), findsOneWidget);
-      await capture(tester, 'detail-steps');
       await tester.tap(find.byTooltip('Ingredient checklist'));
       await tester.pumpAndSettle();
       expect(find.text('1/1 checked'), findsOneWidget);
@@ -468,7 +410,7 @@ void main() {
       expect(plans.writes, 1);
     },
   );
-  testWidgets('all Phase 3 detail tabs work at 320dp with 1.8 text scaling', (
+  testWidgets('all recipe detail tabs work at 320dp with 1.8 text scaling', (
     tester,
   ) async {
     await render(

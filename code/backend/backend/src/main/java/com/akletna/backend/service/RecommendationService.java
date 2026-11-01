@@ -49,7 +49,6 @@ public class RecommendationService {
         var validIds=new HashSet<Long>();
         candidates.stream().filter(matching::valid).forEach(r->validIds.add(r.getId()));
         var saved=candidates.isEmpty()?Set.<Long>of():new HashSet<>(saves.savedIdsForUser(user.getId(),candidates.stream().map(Recipe::getId).toList()));
-        var savedCategories=policy.savedCategories(candidates,saved);
         var results=new ArrayList<Result>();
         int excluded=matches.excludedRecipeCount();
         for(var recipe:recipes.mapCollection(candidates)) {
@@ -62,7 +61,6 @@ public class RecommendationService {
             recipe.setEvaluation(evaluated);recipe.setSaved(saved.contains(recipe.getId()));
             var match=byId.get(recipe.getId());
             var scored=home ? policy.homeScore(recipe,evaluated,profile) : policy.score(recipe,evaluated,profile,match);
-            scored=policy.savedCategoryAffinity(scored,recipe,savedCategories);
             results.add(new Result(0,recipe,scored.score(),match==null?null:match.status(),match==null?null:match.score(),scored.reasons()));
         }
         if(home) results.sort(Comparator.comparing(Result::score,Comparator.reverseOrder()).thenComparing(r->r.recipe().getName().toLowerCase(Locale.ROOT)).thenComparing(r->r.recipe().getId()));

@@ -24,34 +24,7 @@ public class RecommendationPolicy {
     private BigDecimal dislikeCap=new BigDecimal("15");
     private BigDecimal dietaryConflictPenalty=new BigDecimal("30");
     private int popularitySaveCap=10;
-    private boolean personalizedSignalsEnabled=false;
     public record Scored(BigDecimal score,List<Reason> reasons) {}
-
-    /** Optional bounded affinity from the current user's readable saved recipes only.
-     * No event tracking, inferred allergies, or unreviewed nutrition claims are introduced.
-     * Eligibility must already have been checked before adding this ranking signal.
-     */
-    public Set<String> savedCategories(Collection<Recipe> readableCandidates, Set<Long> savedIds) {
-        if (!personalizedSignalsEnabled || savedIds.isEmpty()) return Set.of();
-        var categories=new HashSet<String>();
-        for (var candidate:readableCandidates) {
-            if (savedIds.contains(candidate.getId()) && candidate.getCategory()!=null
-                    && !candidate.getCategory().isBlank())
-                categories.add(candidate.getCategory().strip().toLowerCase(Locale.ROOT));
-        }
-        return Set.copyOf(categories);
-    }
-    public Scored savedCategoryAffinity(Scored base, RecipeResponse recipe, Set<String> savedCategories) {
-        if (!personalizedSignalsEnabled || recipe.getCategory()==null
-                || !savedCategories.contains(recipe.getCategory().strip().toLowerCase(Locale.ROOT))) return base;
-        var reasons=new ArrayList<>(base.reasons());
-        var points=new BigDecimal("5");
-        reasons.add(new Reason("SAVED_CATEGORY", "From a category you have saved", points));
-        return new Scored(base.score().add(points).min(new BigDecimal("100"))
-                .setScale(2,RoundingMode.HALF_UP),List.copyOf(reasons));
-    }
-    public boolean isPersonalizedSignalsEnabled(){return personalizedSignalsEnabled;}
-    public void setPersonalizedSignalsEnabled(boolean value){personalizedSignalsEnabled=value;}
 
     public boolean homePreferencesConfigured(PreferencesResponse p) {
         return !p.getAllergies().isEmpty() || !p.getDietaryRestrictions().isEmpty()

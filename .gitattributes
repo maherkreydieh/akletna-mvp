@@ -1,0 +1,12 @@
+* text=auto
+*.java text eol=lf
+*.dart text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.sql text eol=lf
+*.properties text eol=lf
+*.xml text eol=lf
+*.cmd text eol=crlf
+*.bat text eol=crlf

@@ -9,7 +9,7 @@ import 'package:akletna_frontend/widgets/recipe_image.dart';
 import 'package:akletna_frontend/widgets/weekday_strip.dart';
 import 'package:akletna_frontend/widgets/kitchen_destinations.dart';
 
-import 'experimental_regression_test.dart' show CatalogRecipes;
+import 'quantity_and_navigation_regression_test.dart' show CatalogRecipes;
 import 'support/dashboard_fixtures.dart';
 import 'pantry_test.dart' show HomeAuth;
 

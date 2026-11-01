@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import java.util.Optional;
 
-/** The Day 15 calculation boundary now reads persisted, trusted USDA snapshots; no network calls. */
+/** Reads persisted, trusted USDA snapshots without network calls. */
 @Primary @Component
 public class StoredNutritionProvider implements NutritionProvider {
     private final IngredientNutritionRepository profiles;

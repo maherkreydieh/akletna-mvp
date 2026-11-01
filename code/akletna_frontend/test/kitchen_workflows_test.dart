@@ -1,6 +1,3 @@
-import 'dart:io';
-import 'dart:ui' as ui;
-
 import 'package:akletna_frontend/core/presentation/pantry_quantity_step.dart';
 import 'package:akletna_frontend/core/theme/app_theme.dart';
 import 'package:akletna_frontend/models/meal_plan.dart';
@@ -13,7 +10,6 @@ import 'package:akletna_frontend/screens/pantry/my_pantry_screen.dart';
 import 'package:akletna_frontend/screens/pantry/cook_with_what_i_have_screen.dart';
 import 'package:akletna_frontend/services/meal_plan_service.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'weekly_meal_planner_test.dart' show PlannerFixture, RecipeFixture;
@@ -55,7 +51,6 @@ class ReplacementPlanner extends PlannerFixture {
   }
 }
 
-const _capture = ValueKey('phase4-capture');
 Future<void> screen(
   WidgetTester tester,
   Widget child, {
@@ -72,7 +67,7 @@ Future<void> screen(
             .copyWith(textScaler: TextScaler.linear(scale)),
         child: child!,
       ),
-      home: RepaintBoundary(key: _capture, child: child),
+      home: child,
       routes: {
         '/login': (_) => const Scaffold(body: Text('Login destination')),
       },
@@ -89,21 +84,6 @@ Future<void> tapVisible(WidgetTester tester, Finder finder) async {
   );
   await tester.tap(finder);
   await tester.pumpAndSettle();
-}
-
-Future<void> capture(WidgetTester tester, String name) async {
-  if (!const bool.fromEnvironment('STITCH_CAPTURE')) return;
-  final boundary = tester.renderObject<RenderRepaintBoundary>(
-    find.byKey(_capture),
-  );
-  await tester.runAsync(() async {
-    final image = await boundary.toImage(pixelRatio: 1);
-    final data = await image.toByteData(format: ui.ImageByteFormat.png);
-    await Directory('build/stitch-phase4').create(recursive: true);
-    await File('build/stitch-phase4/$name.png')
-        .writeAsBytes(data!.buffer.asUint8List());
-    image.dispose();
-  });
 }
 
 void main() {
@@ -158,7 +138,6 @@ void main() {
           initialDate: DateTime(2026, 9, 28),
         ),
       );
-      await capture(tester, 'planner');
       await tapVisible(tester, find.byKey(const ValueKey('replace-31')));
       await tester.tap(find.text('Chickpea stew'));
       await tester.pumpAndSettle();
@@ -224,7 +203,6 @@ void main() {
           initialDate: DateTime(2026, 9, 28),
         ),
       );
-      await capture(tester, 'grocery');
       expect(
         tester
             .widget<CheckboxListTile>(find.byKey(const ValueKey('grocery-100')))
@@ -325,7 +303,6 @@ void main() {
           ingredientService: IngredientsFixture(),
         ),
       );
-      await capture(tester, 'pantry');
       await tapVisible(
         tester,
         find.byKey(const ValueKey('pantry-increase-41')),
@@ -399,7 +376,7 @@ void main() {
       expect(find.byType(CookWithWhatIHaveScreen), findsOneWidget);
     },
   );
-  testWidgets('all Phase 4 screens remain usable at 320dp and 1.8 text scale', (
+  testWidgets('all kitchen screens remain usable at 320dp and 1.8 text scale', (
     tester,
   ) async {
     final planner = PlannerFixture()..meals.add(MealPlan.fromJson(mealJson));

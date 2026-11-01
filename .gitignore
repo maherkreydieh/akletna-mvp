@@ -1,52 +1,43 @@
-# Local secrets and generated output anywhere in the project.
+# Private configuration and signing material.
 .env
 .env.*
 !.env.example
 **/application-local.properties
 **/application-local.yml
 **/application-local.yaml
-**/*context.txt
-**/.idea/
-**/.vscode/
-**/target/
-**/build/
-**/coverage/
-*.log
-*.tmp
-*.bak
-*.zip
-*.apk
-*.aab
+**/application-*.local.*
+**/application-private.*
+**/provider-sandbox.env
+**/key.properties
 *.jks
 *.keystore
 *.p12
 *.pfx
-**/key.properties
+*.pem
+*.key
 
-# Personal milestone screenshots are not source-code backup content.
-/akletna milestone photos/
-
-# Local acceptance captures and private autonomous runtime state.
-/docs/test-output/
-/.experiment-private/
-
-# Python helper caches.
+# Build output, dependencies and IDE state.
+**/target/
+**/build/
+**/coverage/
+**/.idea/
+**/.vscode/
+**/.gradle/
+**/.dart_tool/
+**/.cxx/
+**/ephemeral/
+**/Pods/
+**/.symlinks/
+**/node_modules/
+**/dist/
+**/out/
+**/local.properties
+**/Generated.xcconfig
+**/flutter_export_environment.sh
 __pycache__/
 *.py[cod]
 
-# Optional provider credential worksheet; never commit filled values.
-/code/backend/backend/config/provider-sandbox.env
-
-# Isolated demo credentials, backups, and runtime logs.
-/.demo-private/
-
-# Local-only agent instructions; never public.
-/AGENTS.md
-/code/AGENTS.md
-/.ai/
-
-# Local release audit and removed experimental sources.
-/.release-private/
+# Local instructions, research notes and private working directories.
 **/AGENTS.md
 **/CLAUDE.md
 **/PROJECT_STATUS.md
@@ -54,48 +45,35 @@ __pycache__/
 **/.claude/
 **/.codex/
 **/.agents/
-**/local.properties
-**/.gradle/
-**/.dart_tool/
-**/.cxx/
-**/ephemeral/
-**/Pods/
-**/.symlinks/
-**/backups/
-*.dump
-*.backup
-*.old
-*.orig
-*.pem
-*.key
-*.db
-*.sqlite*
-
-**/application-*.local.*
-**/application-private.*
-**/node_modules/
-**/dist/
-**/out/
-*.sql.gz
-*.hprof
-**/Generated.xcconfig
-**/flutter_export_environment.sh
-
-# Local notes and backup directories anywhere in the checkout.
+**/.release-private/
 **/.demo-private/
 **/.experiment-private/
-**/.release-private/
+**/private-notes/
 **/*context.txt
+/code/.day*-*.json
+
+# Database exports, archives, logs and recordings.
+**/backups/
 **/*backup*/
 **/*Backup*/
-**/private-notes/
+*.log
+*.tmp
+*.bak
+*.old
+*.orig
+*.dump
+*.backup
+*.db
+*.sqlite*
+*.zip
 *.7z
 *.tar
 *.tgz
 *.gz
-*.jks
-*.keystore
-
-# Local demo recordings.
-/outputs/
+*.apk
+*.aab
+*.hprof
 *.mp4
+/outputs/
+/docs/test-output/
+/akletna milestone photos/

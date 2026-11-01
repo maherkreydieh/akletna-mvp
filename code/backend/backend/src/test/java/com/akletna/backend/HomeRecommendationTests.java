@@ -70,20 +70,6 @@ class HomeRecommendationTests {
     HomeRecommendationsResponse home() {return service.recommendHome(owner.getEmail(),null,null,null);}
     List<Long> ids(HomeRecommendationsResponse response) {return response.selection().recommendations().stream().map(r->r.recipe().getId()).toList();}
 
-    @Test void optionalSavedAffinityRanksOnlyEligibleRecipesAndRemainsUserScoped() {
-        policy.setPersonalizedSignalsEnabled(true);
-        recipe(1,"Alpha").setCategory("Main");
-        var saved=recipe(2,"Saved soup");saved.setCategory("Soup");
-        var similar=recipe(3,"Z soup");similar.setCategory("soup");
-        when(saves.savedIdsForUser(eq(1L),any())).thenReturn(List.of(2L));
-        assertEquals(List.of(2L,3L,1L),ids(home()));
-        profile.setDislikedIngredientRefs(Set.of(similar.getIngredients().getFirst().getIngredient()));
-        assertEquals(List.of(2L,1L),ids(home()));
-        var otherResult=service.recommendHome(other.getEmail(),null,null,null);
-        assertTrue(otherResult.selection().recommendations().stream().flatMap(r->r.reasons().stream())
-                .noneMatch(r->r.code().equals("SAVED_CATEGORY")));
-    }
-
     @Test void allergiesExcludeKnownConflictsAndIncompleteAllergensBeforeAnyRanking() {
         profile.setAllergies(Set.of("SESAME"));
         reviewed(recipe(1,"Conflicting"),CompatibilityStatus.COMPATIBLE,true,Allergen.SESAME);

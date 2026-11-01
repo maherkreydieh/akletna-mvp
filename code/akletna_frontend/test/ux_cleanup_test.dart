@@ -11,7 +11,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'pantry_test.dart' show HomeAuth;
 import 'support/dashboard_fixtures.dart';
 import 'weekly_meal_planner_test.dart' show PlannerFixture, RecipeFixture;
-import 'stitch_phase4_test.dart' show ReplacementPlanner;
+import 'kitchen_workflows_test.dart' show ReplacementPlanner;
 import 'meal_plan_service_test.dart' show mealJson;
 
 Future<void> phone(WidgetTester tester, Widget screen) async {

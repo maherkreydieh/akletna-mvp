@@ -58,7 +58,7 @@ void main() {
       expect(tester.takeException(), isNull);
     },
   );
-  testWidgets('production named routes use the Stitch shell and auth screens', (
+  testWidgets('production named routes use the kitchen shell and auth screens', (
     tester,
   ) async {
     FlutterSecureStorage.setMockInitialValues({});
